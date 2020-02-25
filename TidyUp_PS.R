@@ -79,7 +79,7 @@ tally()
 # sort the output and then use indexing to print the 3 most common response (not inlcuding missing values)
 sex_count <- arrange(sex_count, desc(n))
 sex_count <- filter(sex_count, sex_count$sex != '(Missing)')
-visualized <- print(sex_count[1:3,])
+print(sex_count[1:3])
 
 
 # create a new variable that recodes gender to have 4 levels: the 3 most common responses and the others collapsed together
